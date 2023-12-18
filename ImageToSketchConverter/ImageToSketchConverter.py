@@ -1,8 +1,15 @@
 import cv2
+import sys
+import subprocess
+import tkinter as tk
+from tkinter import filedialog
 
-image_location = "C:/Users/asgha/Desktop/"
-file_name = "test.jpg"
-
+# create ui
+# add buttons do choose a file
+# have image place holders for old and new image
+# add save button to desktop
+image_location = ""
+file_name = "" # make a choose file option
 img = cv2.imread(image_location + file_name)
 
 scale_percent = 20 # percent of original size
